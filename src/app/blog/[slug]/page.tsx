@@ -42,16 +42,14 @@ export default async function Blog({ params }) {
     if (!post) return notFound();
 
     return (
-        <>
-            <article>
-                <h1 className='title'>{post.metadata.title}</h1>
-                <p>{post.metadata.publishedAt}</p>
-                <p>{post.metadata.summary}</p>
-                <article className="prose dark:prose-invert prose-neutral prose-headings:mt-8 prose-headings:font-semibold prose-headings:text-black prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg dark:prose-headings:text-white">
-                    <CustomMDX source={post.content} />
-                </article>
+        <main>
+            <h1 className='title'>{post.metadata.title}</h1>
+            <p>{post.metadata.publishedAt}</p>
+            <p>{post.metadata.summary}</p>
+            <article className="prose !max-w-none dark:prose-invert prose-neutral prose-headings:mt-8 prose-headings:font-semibold prose-headings:text-black prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg dark:prose-headings:text-white">
+                <CustomMDX source={post.content} />
             </article>
-        </>
+        </main>
     );
 }
 
