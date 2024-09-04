@@ -17,15 +17,17 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${GeistSans.variable}`}>
             <body>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem={true}
-                    disableTransitionOnChange={true}
-                >
-                    <Navbar />
-                    {children}
-                </ThemeProvider>
+                <div className="max-w-2xl mx-auto sm:px-6 xl:max-w-5xl xl:px-6">
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem={true}
+                        disableTransitionOnChange={true}
+                    >
+                        <Navbar />
+                        {children}
+                    </ThemeProvider>
+                </div>
             </body>
         </html>
     );
