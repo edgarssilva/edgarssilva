@@ -93,7 +93,7 @@ Code.theme = {
     light: "github-dark",
 };
 
-Code.lineNumbers = true;
+//Code.lineNumbers = true;
 
 let components = {
     h1: createHeading(1),
