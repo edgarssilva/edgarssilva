@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { CustomMDX } from '~/components/mdx';
 import { getBlogPosts } from '../utils';
 
-export async function getStaticParams() {
+export async function generateStaticParams() {
     let posts = getBlogPosts();
 
     return posts.map((post) => {
