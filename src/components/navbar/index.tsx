@@ -1,6 +1,6 @@
 import React from 'react'
 import { ModeToggle } from '../theme-switcher'
-import { GithubIcon, LinkedinIcon } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react'
 import { Button } from 'src/components/ui/button'
 import Link from 'next/link'
 import { Links } from './Links'

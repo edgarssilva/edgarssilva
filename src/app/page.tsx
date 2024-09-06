@@ -1,14 +1,21 @@
 import Link from "next/link";
 import { ProjectCard } from "~/components/project-card";
 import { Badge } from "~/components/ui/badge";
+import { Button } from "~/components/ui/button";
 
 export default function HomePage() {
     return (
         <main className="mt-6">
-            <div className="flex items-center my-8 gap-6">
+            <div className="flex items-center my-8 gap-12">
                 <div className="sm:w-3/4">
                     <Badge variant="default"><span className="font-semibold pb-0.5">Looking for opportunities</span></Badge>
-                    <h1 className="my-1 scroll-m-20 font-extrabold tracking-tight text-3xl sm:text-4xl lg:text-5xl xl:text-7xl">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 ">Edgar</span>👋</h1>
+                    <h1 className="my-1 scroll-m-20 font-extrabold tracking-tight text-5xl lg:text-6xl xl:text-7xl">
+                        <span>Hi, I'm </span>
+                        <span className="text-nowrap">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Edgar</span>
+                            👋
+                        </span>
+                    </h1>
                     <p className="text-md lg:text-xl medium pt-2">
                         A master software engineer from Portugal. I write about
                         software development, and any projects that might I find myself in.
@@ -21,7 +28,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <section className="mt-12">
+            <section className="mt-8">
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">About me</h3>
                 <p className="leading-7">
                     I'm a software engineer from Portugal. I've been working with software development for over 10 years now.
@@ -30,13 +37,38 @@ export default function HomePage() {
             </section>
 
 
-            <section className="mt-12 pb-52">
+            <section className="mt-8">
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Latest Projects</h3>
-                <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+                    <ProjectCard title="AWS Example" />
+                    <ProjectCard title="AWS Example" />
+                    <ProjectCard title="AWS Example" />
                     <ProjectCard title="AWS Example" />
                     <ProjectCard title="AWS Example" />
                     <ProjectCard title="AWS Example" />
                 </div>
+
+                <div className="mt-6 flex justify-center">
+                    <Link href="/projects" >
+                        <Button variant="default" size="lg" >
+                            View all projects
+                        </Button>
+                    </Link>
+                </div>
+            </section>
+
+            <section className="mt-8">
+                <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Experience</h3>
+                <p className="leading-7">
+                    I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
+                    I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
+                    I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
+                </p>
+            </section>
+
+            <section className="mt-8">
+                <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Education</h3>
+
             </section>
         </main>
     );
