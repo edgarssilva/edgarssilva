@@ -9,6 +9,11 @@ await import("./src/env.js");
 const config = {
     pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 
+    images: {
+        domains: ["placehold.co"],
+        dangerouslyAllowSVG: true,
+    },
+
     typescript: {
         ignoreBuildErrors: true,
     }
