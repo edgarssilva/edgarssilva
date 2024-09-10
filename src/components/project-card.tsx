@@ -23,8 +23,8 @@ export function ProjectCard({
     imageUrl = "https://placehold.co/600x400"
 }: ProjectCardProps) {
     return (
-        <Card className="w-full lg:max-w-sm mx-auto overflow-hidden transition-colors duration-300 bg-card text-card-foreground flex flex-row lg:flex-col">
-            <div className="relative w-full md:max-w-sm lg:pt-[65.25%]">
+        <Card className="w-full lg:max-w-sm mx-auto overflow-hidden transition-colors duration-300 bg-card text-card-foreground flex flex-col">
+            <div className="relative w-full md:max-w-sm pt-[65.25%]">
                 <Image
                     src={imageUrl}
                     alt={`Preview of ${title}`}

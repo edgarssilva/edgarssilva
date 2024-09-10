@@ -6,12 +6,12 @@ import Link from 'next/link'
 import { Links } from './Links'
 
 export const Navbar = (props: {}) => {
-    const nav = [{ href: "/", text: "Home" }, { href: "/blog/test", text: "Blog" }, { href: "/portfolio", text: "Portfolio" }, { href: "/contact", text: "Contact" }];
+    const nav = [{ href: "/", text: "Home" }, { href: "/projects", text: "Projects" }, { href: "/blog/test", text: "Blog" }, { href: "/resume", text: "Resume" }];
 
     return (
-        <div className='relative py-4 w-full flex justify-between items-center gap-4'>
+        <div className='relative py-4 w-fu Centre for Informatics and Systems of the University of Coimbrall flex justify-between items-center gap-4'>
             <Links urls={nav} />
-            <div className='absolute right-0 flex flex-row gap-2'>
+            <div className='shrink-0 right-0 flex flex-row gap-2'>
                 <a href="https://linkedin.com/in/edgarssilva" target='_blank'>
                     <Button variant="ghost" size="icon">
                         <LinkedinIcon className='h-5 w-5' />

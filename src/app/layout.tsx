@@ -5,6 +5,7 @@ import { type Metadata } from "next";
 import { Navbar } from "~/components/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
 import { Footer } from "~/components/footer";
+import { FadeIn } from "~/components/fadein";
 
 export const metadata: Metadata = {
     title: "Create T3 App",
@@ -25,12 +26,14 @@ export default function RootLayout({
                         enableSystem={true}
                         disableTransitionOnChange={true}
                     >
-                        <Navbar />
-                        {children}
-                        <Footer />
+                        <FadeIn>
+                            <Navbar />
+                            {children}
+                            <Footer />
+                        </FadeIn>
                     </ThemeProvider>
                 </div>
             </body>
-        </html>
+        </html >
     );
 }
