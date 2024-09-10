@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${GeistSans.variable}`}>
             <body>
-                <div className="max-w-5xl mx-auto px-8 sm:px-6 xl:px-12">
+                <div className="max-w-[824px] mx-auto px-8 sm:px-6">
                     <ThemeProvider
                         attribute="class"
                         defaultTheme="system"
