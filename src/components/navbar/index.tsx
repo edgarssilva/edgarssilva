@@ -5,7 +5,7 @@ import { Button } from 'src/components/ui/button'
 import { Links } from './Links'
 
 export const Navbar = (props: {}) => {
-    const nav = [{ href: "/", text: "Home" }, { href: "/projects", text: "Projects" }, { href: "/blog/test", text: "Blog" }, { href: "/Resume.pdf", text: "Resume" }];
+    const nav = [{ href: "/", text: "Home" }, { href: "/projects", text: "Projects" }, { href: "/blog", text: "Blog" }, { href: "/Resume.pdf", text: "Resume" }];
 
     return (
         <div className='relative py-4 w-fu Centre for Informatics and Systems of the University of Coimbrall flex justify-between items-center gap-4'>
