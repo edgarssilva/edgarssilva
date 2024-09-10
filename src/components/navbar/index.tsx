@@ -13,12 +13,12 @@ export const Navbar = (props: {}) => {
             <div className='shrink-0 right-0 flex flex-row gap-2'>
                 <a href="https://linkedin.com/in/edgarssilva" target='_blank'>
                     <Button variant="ghost" size="icon">
-                        <LinkedinIcon className='h-5 w-5' />
+                        <LinkedinIcon className='w-4 h-4 sm:h-5 sm:w-5' />
                     </Button>
                 </a>
                 <a href="https://github.com/edgarssilva" target='_blank'>
                     <Button variant="ghost" size="icon">
-                        <GithubIcon className='h-5 w-5' />
+                        <GithubIcon className='w-4 h-4 sm:h-5 sm:w-5' />
                     </Button>
                 </a>
                 <ModeToggle />
