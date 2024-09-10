@@ -17,7 +17,7 @@ export default function RevealSection({ children, className }) {
         initial={"hidden"}
         animate={isInView ? "visible" : "hidden"}
         variants={variants}
-        transition={{ delay: 0.15, duration: 0.4, ease: "easeOut" }}
+        transition={{ delay: 0.05, duration: 0.4, ease: "easeOut" }}
     >
         {children}
     </motion.section >;
