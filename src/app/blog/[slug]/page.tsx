@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 
 import { CustomMDX } from '~/components/mdx';
 import { getBlogPosts } from '../utils';
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from '~/components/ui/breadcrumb';
 
 export async function generateStaticParams() {
     let posts = getBlogPosts();
@@ -15,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export function generateMetadata({ params }) {
-    let post = getBlogPosts().find((post) => post.slug === params.slug);
+    const post = getBlogPosts().find((post) => post.slug === params.slug);
     if (!post) return;
 
     return {
