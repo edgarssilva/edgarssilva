@@ -15,7 +15,7 @@ export default function RevealSection({ children, className = "", delay = 0 }) {
     return <motion.section className={className + " motion"}
         ref={ref}
         initial={"hidden"}
-        animate={isInView ? "visible" : "hidden"}
+        animate={"visible"}
         variants={variants}
         transition={{ delay: delay, duration: 0.4, ease: "easeOut" }}
     >

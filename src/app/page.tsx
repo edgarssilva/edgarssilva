@@ -109,8 +109,9 @@ export default function HomePage() {
                         </span>
                     </h1>
                     <p className="text-md lg:text-xl medium pt-2">
-                        A master software engineer from Portugal. I write about
-                        software development, and any projects that might I find myself in.
+                        Welcome to my personal website.
+                        Here you can find information about me, my projects and my skills.
+                        Feel free to contact me if you have any questions or if you want to work with me.
                     </p>
                 </div>
                 <div className="flex-1 hidden sm:block">
@@ -120,13 +121,12 @@ export default function HomePage() {
                 </div>
             </RevealSection>
 
-            <RevealSection className="mt-8" delay={delay + (++index) * 0.075}>
-                <div className="flex flex-wrap lg:flex-nowrap gap-8">
+            <RevealSection className="mt-8 mb-2" delay={delay + (++index) * 0.075}>
+                <div className="flex flex-wrap lg:flex-nowrap gap-6 lg:gap-10">
                     <div className="w-full lg:basis-[65%] shrink-0">
                         <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">About me</h3>
                         <p className="leading-7">
-                            I'm a software engineer from Portugal. I've been working with software development for over 10 years now.
-                            I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
+                            I’m a Software Engineering Master’s graduate from Portugal, passionate about programming since high school. My expertise is in web development, with a strong focus on Java and JavaScript, using frameworks like React.js and Next.js. Recently, I’ve been working with AWS, focusing on serverless architectures with Lambda. In my spare time, I enjoy working on game development.
                         </p>
 
 
@@ -182,7 +182,7 @@ export default function HomePage() {
                 </div>
             </RevealSection>
 
-            <RevealSection className="mt-8">
+            <RevealSection className="mt-8" delay={delay + (++index) * 0.075}>
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Education</h3>
 
                 <div className="flex flex-col gap-2 mt-1">
