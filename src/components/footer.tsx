@@ -11,7 +11,7 @@ export function Footer() {
                         © 2024 Edgar Silva. All rights reserved.
                     </p>
                 </div>
-                <div className='text-muted-foreground'>
+                <div className='shrink-0 text-muted-foreground'>
                     <a href="https://linkedin.com/in/edgarssilva" target='_blank'>
                         <Button variant="ghost" size="icon">
                             <LinkedinIcon className='h-5 w-5' />
