@@ -4,7 +4,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react';
 
 export function Footer() {
     return (
-        <footer className="mt-12 py-8">
+        <footer className="py-8 mt-auto h-28">
             <div className="flex items-center justify-between">
                 <div>
                     <p className="text-sm text-muted-foreground">

@@ -2,11 +2,10 @@ import React from 'react'
 import { ModeToggle } from '../theme-switcher'
 import { GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react'
 import { Button } from 'src/components/ui/button'
-import Link from 'next/link'
 import { Links } from './Links'
 
 export const Navbar = (props: {}) => {
-    const nav = [{ href: "/", text: "Home" }, { href: "/projects", text: "Projects" }, { href: "/blog/test", text: "Blog" }, { href: "/resume", text: "Resume" }];
+    const nav = [{ href: "/", text: "Home" }, { href: "/projects", text: "Projects" }, { href: "/blog/test", text: "Blog" }, { href: "/Resume.pdf", text: "Resume" }];
 
     return (
         <div className='relative py-4 w-fu Centre for Informatics and Systems of the University of Coimbrall flex justify-between items-center gap-4'>

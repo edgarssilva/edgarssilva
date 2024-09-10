@@ -3,12 +3,12 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function RevealSection({ children, className }) {
+export default function RevealSection({ children, className = "", delay = 0 }) {
     const ref = React.useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-50px" });
+    const isInView = useInView(ref, { once: true, margin: "-25px" });
 
     const variants = {
-        hidden: { y: 15, opacity: 0, filter: "blur(3px)" },
+        hidden: { y: 20, opacity: 0, filter: "blur(3px)" },
         visible: { y: 0, opacity: 1, filter: "blur(0px)" }
     };
 
@@ -17,8 +17,8 @@ export default function RevealSection({ children, className }) {
         initial={"hidden"}
         animate={isInView ? "visible" : "hidden"}
         variants={variants}
-        transition={{ delay: 0.05, duration: 0.4, ease: "easeOut" }}
+        transition={{ delay: delay, duration: 0.4, ease: "easeOut" }}
     >
         {children}
-    </motion.section >;
+    </motion.section>;
 }

@@ -79,19 +79,27 @@ const education = [
     {
         "school": "Secondary School of Albergaria-a-Velha",
         "addres": "https://aeaav.pt/en",
-        "degree": "Vocational Course in IT Management and Programming",
+        "degree": "Vocational Course in IT Management and Programming (TGPSI)",
         "date": "2016 - 2019",
         "image": aeaav,
     },
 
 ];
 
+const skils = [
+    "Java", "JavaScript", "Typescript", "Node.js", "React.js", "Next.js", "Amazon Web Services", "Full Stack", "PHP",
+    "Git", "Docker", "Kubernetes", "HTML", "SQL", "NoSQL", "Linux"
+];
+
 
 export default function HomePage() {
+    const delay = 0.2;
+    let index = 0;
+
     return (
         <main className="mt-6" >
-            <RevealSection className="flex items-center my-8 gap-8">
-                <div className="sm:w-3/4">
+            <RevealSection className="flex items-center mb-8 gap-8" delay={delay + (++index) * 0.075}>
+                <div className="sm:w-3/4 lg:w-[65%]">
                     <Badge variant="default"><span className="font-semibold pb-0.5">Looking for opportunities</span></Badge>
                     <h1 className="my-1 scroll-m-20 font-extrabold tracking-tight text-5xl lg:text-6xl">
                         <span>Hi, I'm </span>
@@ -112,16 +120,17 @@ export default function HomePage() {
                 </div>
             </RevealSection>
 
-            <RevealSection className="mt-8">
-                <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">About me</h3>
-                <p className="leading-7">
-                    I'm a software engineer from Portugal. I've been working with software development for over 10 years now.
-                    I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
-                </p>
-            </RevealSection>
+            <RevealSection className="mt-8" delay={delay + (++index) * 0.075}>
+                <div className="flex flex-wrap lg:flex-nowrap gap-8">
+                    <div className="w-full lg:basis-[65%] shrink-0">
+                        <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">About me</h3>
+                        <p className="leading-7">
+                            I'm a software engineer from Portugal. I've been working with software development for over 10 years now.
+                            I've worked with a variety of technologies and languages, but I'm mostly focused on web development.
+                        </p>
 
 
-            <RevealSection className="mt-8">
+                        {/*<RevealSection className="mt-8" delay={delay + (++index) * 0.05}>
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Latest Projects</h3>
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
                     <ProjectCard title="AWS Example" />
@@ -137,9 +146,20 @@ export default function HomePage() {
                         </Button>
                     </Link>
                 </div>
+            </RevealSection>*/}
+                    </div>
+                    <div>
+                        <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Skills</h3>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                            {skils.map((s, i) => (
+                                <Badge key={i} variant="default" className="hover:bg-foreground">{s}</Badge>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </RevealSection>
 
-            <RevealSection className="mt-8">
+            <RevealSection className="mt-8" delay={delay + (++index) * 0.075}>
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Experience</h3>
 
                 <div className="flex flex-col gap-2 mt-1">
