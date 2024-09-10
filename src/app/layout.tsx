@@ -5,6 +5,7 @@ import { type Metadata } from "next";
 import { Navbar } from "~/components/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
 import { Footer } from "~/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
                 </div>
             </body>
             <noscript dangerouslySetInnerHTML={{ __html: '<style>.motion{ opacity: 1 !important; transform: translateY(0px) !important; filter: blur(0px) !important;}</style>' }} />
+            <SpeedInsights />
         </html >
     );
 }
