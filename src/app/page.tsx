@@ -1,7 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ProjectCard } from "~/components/project-card";
 import { Badge } from "~/components/ui/badge";
 import { Button } from "~/components/ui/button";
+
+import nexusAgenda from "~/../assets/nexus-agenda.png";
 
 export default function HomePage() {
     return (
@@ -57,10 +60,15 @@ export default function HomePage() {
 
             <section className="mt-8">
                 <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">Experience</h3>
-                <div>
-                    <h4 className="font-semibold text-xl">Cloud Backend Developer</h4>
-                    <p>Amazon Web Services</p>
-                    <p>Sep 2023 - Jul 2024</p>
+                <div className="flex gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 p-1.5 rounded-[50%] relative bg-white ">
+                        <Image src={nexusAgenda} alt="Nexus Agenda" objectFit="contain" />
+                    </div>
+                    <div className="flex-1">
+                        <h4 className="font-semibold text-xs sm:text-sm">NEXUS AGENDA at CISUC </h4>
+                        <p className="text-xs sm:text-sm">Cloud Backend Developer (AWS)</p>
+                    </div>
+                    <p className="text-right text-xs sm:text-sm text-muted-foreground flex-shrink">Sep 2023 - Jul 2024</p>
                 </div>
             </section>
 
