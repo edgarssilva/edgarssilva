@@ -15,7 +15,7 @@ export default function Projects() {
                 src={working}
                 alt="Under Construction"
                 className="mb-2"
-                style={{ height: "calc(100vh - 290px)" }}
+                style={{ height: "calc(100vh - 290px)", minHeight: "250px" }}
             />
             <h1 className="text-2xl font-bold text-center text-pretty">Sorry, I'm still doing some work on this page</h1>
             <p className="text-sm mt-2 text-center text-muted-foreground">Thank you for being patient. This page should be ready shortly.</p>
