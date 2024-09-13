@@ -4,15 +4,15 @@ import { ProjectCard } from "~/components/project-card";
 import { Badge } from "~/components/ui/badge";
 import { Button } from "~/components/ui/button";
 
-import nexusAgenda from "~/assets/nexus-agenda.png";
-import upwork from "~/assets/upwork.png";
-import fishFolk from "~/assets/fishfolk-punchy.png";
-import reage from "~/assets/reage.png";
-import openquest from "~/assets/openquest.jpg";
+import nexusAgenda from "~/assets/nexus-agenda-min.png";
+import upwork from "~/assets/upwork-min.png";
+import fishFolk from "~/assets/fishfolk-punchy-min.png";
+import reage from "~/assets/reage-min.png";
+import openquest from "~/assets/openquest-min.jpg";
 
-import dei from "~/assets/dei.png";
-import estgoh from "~/assets/estgoh.png";
-import aeaav from "~/assets/aeaav.png";
+import dei from "~/assets/dei-min.png";
+import estgoh from "~/assets/estgoh-min.png";
+import aeaav from "~/assets/aeaav-min.png";
 import RevealSection from "~/components/reveal-section";
 
 const experience = [
