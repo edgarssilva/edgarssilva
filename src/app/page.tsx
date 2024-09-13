@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ProjectCard } from "~/components/project-card";
+import RevealSection from "~/components/reveal-section";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 
 import nexusAgenda from "~/assets/nexus-agenda-min.png";
 import upwork from "~/assets/upwork-min.png";
@@ -13,7 +12,8 @@ import openquest from "~/assets/openquest-min.jpg";
 import dei from "~/assets/dei-min.png";
 import estgoh from "~/assets/estgoh-min.png";
 import aeaav from "~/assets/aeaav-min.png";
-import RevealSection from "~/components/reveal-section";
+
+import face from "~/assets/face-min.jpg";
 
 const experience = [
     {
@@ -116,7 +116,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1 hidden sm:block">
                     <div className="w-40 h-40 lg:w-44 lg:h-44 mx-auto">
-                        <img src="https://media.licdn.com/dms/image/v2/C4D03AQHN7fttaY1h4w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1658667372075?e=1730937600&v=beta&t=NI0tJxWh_gJnZHW6DeyhOb75UTXm0FRdo0zHylcXwYQ" alt="Edgar Silva" className="rounded-[50%] w-full h-full" />
+                        <Image src={face} alt="Edgar Silva" fill={true} className="object-contain object-center" />
                     </div>
                 </div>
             </RevealSection>
