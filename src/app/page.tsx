@@ -115,8 +115,8 @@ export default function HomePage() {
                     </p>
                 </div>
                 <div className="flex-1 hidden sm:block">
-                    <div className="w-40 h-40 lg:w-44 lg:h-44 mx-auto">
-                        <Image src={face} alt="Edgar Silva" fill={true} className="object-contain object-center" />
+                    <div className="w-40 h-40 lg:w-44 lg:h-44 mx-auto relative">
+                        <Image src={face} alt="Edgar Silva" fill={true} className="object-contain object-center rounded-full" />
                     </div>
                 </div>
             </RevealSection>
