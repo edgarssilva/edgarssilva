@@ -3,6 +3,7 @@ import Image from "next/image";
 import RevealSection from "~/components/reveal-section";
 import { Badge } from "~/components/ui/badge";
 
+import alticeLabs from "~/assets/altice-labs.jpg";
 import nexusAgenda from "~/assets/nexus-agenda-min.png";
 import upwork from "~/assets/upwork-min.png";
 import fishFolk from "~/assets/fishfolk-punchy-min.png";
@@ -13,9 +14,17 @@ import dei from "~/assets/dei-min.png";
 import estgoh from "~/assets/estgoh-min.png";
 import aeaav from "~/assets/aeaav-min.png";
 
-import face from "~/assets/face-min.jpg";
+//import face from "~/assets/face-min.jpg";
+import face from "~/assets/face.webp"; 
 
 const experience = [
+    {
+        "company": "Altice Labs - Multivision Consulting",
+        "addres": "https://www.alticelabs.com/",
+        "role": "AI Ops Engineer",
+        "date": "Oct 2024 - Present",
+        "image": alticeLabs,
+    },
     {
         "company": "NEXUS AGENDA at CISUC",
         "addres": "https://nexuslab.pt/",
@@ -87,8 +96,8 @@ const education = [
 ];
 
 const skils = [
-    "Java", "JavaScript", "Typescript", "Node.js", "React.js", "Next.js", "Amazon Web Services", "Full Stack", "PHP",
-    "Git", "Docker", "Kubernetes", "HTML", "SQL", "NoSQL", "Linux"
+    "Java", "JavaScript", "Typescript", "Python", "AI Ops", "Node.js", "React.js", "Next.js", "Full Stack","Amazon Web Services", //"PHP",
+    "Git", "Docker", "Kubernetes", "HTML", "SQL", "NoSQL", "Linux", "Kafka"
 ];
 
 
@@ -126,7 +135,7 @@ export default function HomePage() {
                     <div className="w-full lg:basis-[65%] shrink-0">
                         <h3 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight first:mt-0">About me</h3>
                         <p className="leading-7">
-                            I’m a Software Engineering Master’s graduate from Portugal, passionate about programming since high school. My expertise is in web development, with a strong focus on Java and JavaScript, using frameworks like React.js and Next.js. Recently, I’ve been working with AWS, focusing on serverless architectures with Lambda. In my spare time, I enjoy working on game development.
+                            I’m a Software Engineering Master’s graduate from Portugal, passionate about programming since high school. Started in web development, with a strong focus on Java and JavaScript, using frameworks like React.js and Next.js. Currently, I’m working in AI Operations creating applications that ingest millions of events and device metrics in real time, to find outliers and their root cause. To achive this I have been working with Kafka, AWS and Kubernetes. In my spare time, I enjoy working on game development.
                         </p>
 
 
